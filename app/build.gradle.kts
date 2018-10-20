@@ -32,6 +32,8 @@ dependencies {
     implementation(kotlin("stdlib-jdk7", KotlinCompilerVersion.VERSION))
 
     // AndroidX
+    implementation("androidx.core:core-ktx:1.0.0")
+    implementation("androidx.fragment:fragment-ktx:1.0.0")
     implementation("androidx.appcompat:appcompat:1.0.0")
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")
 
