@@ -4,6 +4,7 @@ plugins {
     id("com.android.application")
     id("kotlin-android")
     id("kotlin-android-extensions")
+    id("kotlin-kapt")
 }
 
 android {
@@ -32,6 +33,23 @@ dependencies {
 
     // AndroidX
     implementation("androidx.appcompat:appcompat:1.0.0")
+    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
+
+    // Material
+    implementation("com.google.android.material:material:1.0.0")
+
+    // MvRx
+    implementation("com.airbnb.android:mvrx:0.5.0")
+
+    // Dagger
+    implementation("com.google.dagger:dagger:2.16")
+    kapt("com.google.dagger:dagger-compiler:2.16")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.4.0")
+
+    // Timber
+    implementation("com.jakewharton.timber:timber:4.7.1")
 
     // Testing
     testImplementation("junit:junit:4.12")
