@@ -26,8 +26,14 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+
+    // Kotlin
     implementation(kotlin("stdlib-jdk7", KotlinCompilerVersion.VERSION))
+
+    // AndroidX
     implementation("androidx.appcompat:appcompat:1.0.0")
+
+    // Testing
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test:runner:1.1.0-beta02")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.1.0-beta02")
