@@ -9,6 +9,10 @@ plugins {
 
 android {
     compileSdkVersion(28)
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
     defaultConfig {
         applicationId = "com.richardharrah.mvrxdagger"
         minSdkVersion(21)
@@ -29,7 +33,8 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
     // Kotlin
-    implementation(kotlin("stdlib-jdk7", KotlinCompilerVersion.VERSION))
+    implementation(kotlin("stdlib-jdk8", KotlinCompilerVersion.VERSION))
+    implementation(kotlin("reflect", KotlinCompilerVersion.VERSION))
 
     // AndroidX
     implementation("androidx.core:core-ktx:1.0.0")
@@ -46,6 +51,9 @@ dependencies {
     // Dagger
     implementation("com.google.dagger:dagger:2.16")
     kapt("com.google.dagger:dagger-compiler:2.16")
+
+    // OkHttp3
+    implementation("com.squareup.okhttp3:logging-interceptor:3.11.0")
 
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.4.0")
