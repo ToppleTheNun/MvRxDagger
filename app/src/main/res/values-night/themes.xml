@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MvRxDagger.DayNight" parent="Theme.MvRxDagger.Dark" />
+    <style name="Theme.MvRxDagger.DayNight.NoActionBar" parent="Theme.MvRxDagger.Dark.NoActionBar" />
+
+</resources>

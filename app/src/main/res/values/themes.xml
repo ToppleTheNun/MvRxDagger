@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MvRxDagger.Dark" parent="Theme.MaterialComponents">
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/fade</item>
+        <item name="android:windowExitTransition">@transition/fade</item>
+    </style>
+    <style name="Theme.MvRxDagger.Light" parent="Theme.MaterialComponents.Light">
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/fade</item>
+        <item name="android:windowExitTransition">@transition/fade</item>
+    </style>
+
+    <style name="Theme.MvRxDagger.Dark.NoActionBar" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/fade</item>
+        <item name="android:windowExitTransition">@transition/fade</item>
+    </style>
+    <style name="Theme.MvRxDagger.Light.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/fade</item>
+        <item name="android:windowExitTransition">@transition/fade</item>
+    </style>
+
+    <style name="Theme.MvRxDagger.DayNight" parent="Theme.MvRxDagger.Light" />
+    <style name="Theme.MvRxDagger.DayNight.NoActionBar" parent="Theme.MvRxDagger.Light.NoActionBar" />
+
+</resources>
