@@ -1,8 +1,10 @@
 package com.richardharrah.mvrxdagger.di.modules
 
 import androidx.annotation.NonNull
+import com.richardharrah.mvrxdagger.data.PlaceholderApi
 import dagger.Module
 import dagger.Provides
+import dagger.Reusable
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -45,4 +47,11 @@ object NetworkingModule {
             .baseUrl("https://jsonplaceholder.typicode.com")
             .client(okHttpClient)
             .build()
+
+    @JvmStatic
+    @NonNull
+    @Provides
+    @Reusable
+    fun providePlaceholderApi(retrofit: Retrofit): PlaceholderApi =
+            retrofit.create(PlaceholderApi::class.java)
 }
